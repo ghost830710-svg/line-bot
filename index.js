@@ -6,6 +6,10 @@ app.use(express.json());
 
 const TOKEN = "D5MVBx38yX02kZILcDbIXr6+CgD5pPl4OoQRkOsASHuZz9l6aTtz0GCirez+0GGH+B3W8mXp3tHkfWAUII28OX4GAHmCF1C7FRJj7hVcfrxS6FU6qUHrUWtgtVITUZy2xToww27FXxizRZS4jJ/QUQdB04t89/1O/w1cDnyilFU=";
 
+app.get("/", (req, res) => {
+  res.send("OK");
+});
+
 let orders = {
   "123": { status: "waiting" }
 };
